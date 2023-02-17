@@ -1,0 +1,189 @@
+
+/* here # is used since featured-products is an ID*/
+#featured-prodcuts{
+   margin-left: 5rem;
+   padding: 20px;
+   gap: 50px;
+   /*  By using display flex in parent elements, child elements automatically align like columns or rows with auto width and auto height.*/
+   display: flex;
+   flex: wrap;
+   align-items: center;
+   justify-content: center;
+}
+body {
+   padding: 0px;
+   margin: 0px;
+}
+.qs-h1 {
+   width: 100px;
+   align-items: left;
+   display: flex;
+   /*flex wrap makes the page responsive by allowing items to stack on top of each other*/
+   flex-wrap: wrap;
+  
+}
+#navbar {
+   /* fonts are being imported*/
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   display: flex;
+   align-items:center;
+   justify-content: space-between;
+   /* box shadow creates a shadow around the element and makes the website more attractive*/
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   /* margin is used to create space around elements, outside of any defined borders*/
+   margin: 0px;
+   padding: 20px;
+   margin-bottom: 5rem;
+}
+#main-title {
+   margin: 0px;
+   border: solid 5px white;
+   padding: 0.5rem;
+   /* border radius creates a rounded edge*/
+   border-radius: 5px;
+   /* transitions provide a way to control animation speed when changing the properties.*/
+   transition: 500ms;
+   color: green;
+}
+#main-title:hover {
+   /*SOLID means displaying a single, straight, solid line. this just makes the title more pronounced when hovered over*/
+   border: solid 5px black;
+   color: black;
+}
+a {
+   text-decoration: none;;
+   font-weight: normal;
+   font-size: 1.3rem;
+   margin-left: 1.2rem;
+   color: gray;
+     /* transitions provide a way to control animation speed when changing CSS properties.*/
+   transition: 0.4s;
+}
+a:hover {
+   color:black;
+}
+a.active {
+   color: black;
+   text-decoration: underline;
+}
+#drake { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.hero {
+   /* this is the main part of the home page*/
+   display: flex;
+   align-items: center;
+   /* this is placing the hero in the center*/
+   justify-content: center;
+   /* gap is used to make it not crowded and stand out*/
+   gap:100px;
+   margin-bottom: 50px;
+   flex-wrap: wrap;
+}
+.button{
+   background-color: green;
+   border-radius: 0.3rem;
+   /*Padding creates extra space within an element*/
+   padding: 0.5rem;
+   color: white;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn-primary {
+color: white;
+background-color: green;
+border: none;
+/* border radius gives arounded border*/
+border-radius: .3em;
+font-weight: bold;
+
+}
+.first-line{
+   font-size: 1.5rem;
+}
+
+div.album-card {
+   display: flex;
+   /* flex dircetion sets how flex items are placed in the flex container defining the main axis and the direction*/
+   flex-direction: column;
+   margin-top: 2rem;
+   width: 200px;
+   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   padding: 20px;
+   border-radius: 10px;; 
+}
+.album-card-text{
+   text-align: center;
+}
+.album-card img {
+   /* height i set at 200px*/
+   height: 200px;
+   background-size: cover;
+}
+#album-section{
+   display: flex;
+   gap: 50px;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+         .bd-placeholder-img {
+           font-size: 1.125rem;
+           /*The text-anchor attribute is used to align a string of pre-formatted text or auto-wrapped text*/
+           text-anchor: middle;
+           /* this is to specify which elements in the document can be selected and how*/
+           -webkit-user-select: none;
+           -moz-user-select: none;
+           user-select: none;
+         }
+   
+         @media (min-width: 768px) {
+           /*bootstrap to size image*/
+           .bd-placeholder-img-lg {
+             font-size: 3.5rem;
+           }
+         }
+   
+         .b-example-divider {
+           height: 2rem;
+           /* creates green border to match green theme*/
+           border-color: green;
+           border-width: 1px 0;
+          
+         }
+   
+         .b-example-vr {
+           /* If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink*/
+           flex-shrink: 0;
+           width: 1.5rem;
+           height: 100vh;
+         }
+   
+         .bi {
+           /* this is to vertically align*/
+           vertical-align: -.125em;
+           fill: white;
+           color: white;
+         }
+   
+         .nav-scroller {
+           /* position relative means that it's relative to its original position within the parent element.*/
+           position: relative;
+           z-index: 2;
+           height: 2.75rem;
+           overflow-y: hidden;
+         }
+   
+         .nav-scroller .nav {
+           display: flex;
+           flex-wrap: nowrap;
+           padding-bottom: 1rem;
+           margin-top: -1px;
+           overflow-x: auto;
+           text-align: center;
+           white-space: nowrap;
+           /*this specifies whether, and in what ways, a given region can be manipulated by the user (for instance, by panning or zooming)*/
+           -webkit-overflow-scrolling: touch;
+         }
+       
+
